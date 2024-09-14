@@ -23,7 +23,9 @@
       <sourceFolder url="file://$MODULE_DIR$/../../../usbCameraTest4/build/generated/res/resValues/androidTest/debug" type="java-test-resource" />
     </content>
     <content url="file://$MODULE_DIR$/../../../usbCameraTest4/build/generated/res/rs/androidTest/debug" />
-    <content url="file://$MODULE_DIR$/../../../usbCameraTest4/build/generated/source/buildConfig/androidTest/debug" />
+    <content url="file://$MODULE_DIR$/../../../usbCameraTest4/build/generated/source/buildConfig/androidTest/debug">
+      <sourceFolder url="file://$MODULE_DIR$/../../../usbCameraTest4/build/generated/source/buildConfig/androidTest/debug" isTestSource="true" generated="true" />
+    </content>
     <content url="file://$MODULE_DIR$/../../../usbCameraTest4/src/androidTest" />
     <content url="file://$MODULE_DIR$/../../../usbCameraTest4/src/androidTestDebug" />
     <orderEntry type="jdk" jdkName="Android API 34, extension level 7 Platform" jdkType="Android SDK" />
