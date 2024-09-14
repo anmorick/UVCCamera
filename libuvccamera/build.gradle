@@ -64,9 +64,9 @@ String getNdkBuildPath() {
 		ndkBuildingDir = properties.getProperty("ndk.dir") + '/'
 	}
 	if (Os.isFamily(Os.FAMILY_WINDOWS)) {
-		ndkBuildPath = ndkBuildingDir + '/ndk-build.cmd'
+		ndkBuildPath = ndkBuildingDir + 'ndk-build.cmd'
 	} else {
-		ndkBuildPath = ndkBuildingDir + '/ndk-build'
+		ndkBuildPath = ndkBuildingDir + 'ndk-build'
 	}
 	return ndkBuildPath
 }
