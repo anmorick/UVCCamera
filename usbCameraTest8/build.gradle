@@ -25,7 +25,6 @@ apply plugin: 'com.android.application'
 
 android {
 	compileSdkVersion versionCompiler
-	buildToolsVersion versionBuildTool
 
 	compileOptions {
 		sourceCompatibility javaSourceCompatibility
@@ -34,7 +33,7 @@ android {
 
 	defaultConfig {
 		applicationId "com.serenegiant.usbcameratest8"
-		minSdkVersion 18
+		minSdkVersion minSdkVersion // 18
 		targetSdkVersion versionTarget
 		versionCode 1
 		versionName "1.0"

@@ -24,8 +24,7 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion versionCompiler
-   	buildToolsVersion versionBuildTool
+    compileSdk versionCompiler
 
    	compileOptions {
    		sourceCompatibility javaSourceCompatibility
