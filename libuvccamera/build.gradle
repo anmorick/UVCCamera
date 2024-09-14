@@ -57,9 +57,12 @@ tasks.withType(JavaCompile) {
 
 String getNdkBuildPath() {
 	Properties properties = new Properties()
-	properties.load(project.rootProject.file('local.properties').newDataInputStream())
-	def ndkBuildingDir = properties.getProperty("ndk.dir")
-	def ndkBuildPath = ndkBuildingDir
+	def ndkBuildPath = "";
+	def ndkBuildingDir = "";
+	if (project.rootProject.file("local.properties").exists()) {
+		properties.load(project.rootProject.file('local.properties').newDataInputStream())
+		ndkBuildingDir = properties.getProperty("ndk.dir") + '/'
+	}
 	if (Os.isFamily(Os.FAMILY_WINDOWS)) {
 		ndkBuildPath = ndkBuildingDir + '/ndk-build.cmd'
 	} else {
