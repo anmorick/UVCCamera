@@ -31,9 +31,6 @@ jobs:
       
     - name: Execute Gradle Build Release
       run: ./gradlew clean build assembleRelease --parallel -x lint
-      
-    - name: List APK files
-      run: ls app/build/outputs/apk/**/*.apk
 
     - name: Upload
       if: github.ref_name == 'release'
