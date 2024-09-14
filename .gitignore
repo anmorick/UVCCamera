@@ -56,6 +56,8 @@ build
 !.idea/fileColors.xml
 !.idea/encodings.xml
 !.idea/gradle.xml
+!.idea/modules.xml
+!.idea/modules/*.xml
 !.idea/runConfigurations/*.xml
 
 !.idea/inspectionProfiles/*.xml
